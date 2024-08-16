@@ -1,23 +1,27 @@
-import logo from './logo.svg';
+
+import NavBar from "./componts/NavBar";
 import './App.css';
+import Banner from "./componts/Banner";
+// import Projects from "./componts/Projects";
+import Skills from "./componts/Skills";
+import Newsletter from "./componts/Newsletter";
+import Footer from "./componts/Footer";
+import MailchimpForm from "./componts/MailchimpForm";
+import Contact from "./componts/Contact";
+import Contactus from "./componts/Contactus";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavBar/>
+      <Banner/>
+      {/* <Projects/> */}
+      <Skills/>
+      <Newsletter/>
+      {/* <Contact/> */}
+      <Contactus/>
+      <Footer/>
+      {/* <MailchimpForm/> */}
     </div>
   );
 }
